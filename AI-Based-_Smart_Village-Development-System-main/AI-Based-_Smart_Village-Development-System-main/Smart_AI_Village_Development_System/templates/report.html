@@ -1,0 +1,131 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Village Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="form-box">
+
+<h1>📄 Smart Village Report</h1>
+
+<p>Your Smart Village Analysis has been completed successfully.</p>
+
+<h2>Included in Report</h2>
+
+<ul>
+    <li>Village Information</li>
+    <li>Development Score</li>
+    <li>Crop Recommendation</li>
+    <li>Employment Suggestions</li>
+    <li>Infrastructure Suggestions</li>
+</ul>
+
+<br>
+
+<a class="start-btn" href="/dashboard">
+Back to Dashboard
+</a>
+
+</div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Village Report</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="report-page">
+
+<div class="glass-card report-container">
+
+    <h1 class="report-title">
+        📄 Smart Village Report
+    </h1>
+
+    <p class="report-subtitle">
+        Your Smart Village Analysis has been completed successfully.
+    </p>
+
+    <div class="report-box">
+        <span>🏠</span>
+        <div>
+            <h3>Village Information</h3>
+            <p>Village details and demographic data.</p>
+        </div>
+    </div>
+
+    <div class="report-box">
+        <span>📊</span>
+        <div>
+            <h3>Development Score</h3>
+            <p>Current and predicted development score.</p>
+        </div>
+    </div>
+
+    <div class="report-box">
+        <span>🌾</span>
+        <div>
+            <h3>Crop Recommendation</h3>
+            <p>Suitable crops according to rainfall and soil.</p>
+        </div>
+    </div>
+
+    <div class="report-box">
+        <span>💼</span>
+        <div>
+            <h3>Employment Suggestions</h3>
+            <p>AI based employment opportunities.</p>
+        </div>
+    </div>
+
+    <div class="report-box">
+        <span>🏗️</span>
+        <div>
+            <h3>Infrastructure Suggestions</h3>
+            <p>Road, health, education and digital improvements.</p>
+        </div>
+    </div>
+
+    <div class="report-box">
+        <span>🤖</span>
+        <div>
+            <h3>AI Recommendation</h3>
+            <p>Future development suggestions for next 10 years.</p>
+        </div>
+    </div>
+    <div class="graph-section">
+
+    <h2>📈 Development Analysis</h2>
+
+    <img src="{{ url_for('static', filename=graph) }}"
+         alt="Development Graph"
+         class="graph-image">
+
+</div>
+    
+    <div class="report-buttons">
+        <a href="/download_report" class="green-btn">
+            Download Report
+        </a>
+
+        <a href="/dashboard" class="blue-btn">
+            Back to Dashboard
+        </a>
+    </div>
+
+</div>
+
+</body>
+
+</html>

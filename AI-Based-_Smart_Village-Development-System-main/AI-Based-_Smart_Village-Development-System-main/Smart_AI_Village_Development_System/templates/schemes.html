@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Government Scheme Recommendation</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="form-box">
+<h1>{{ lang.scheme_title }}</h1>
+
+<form method="POST">
+
+
+<label>{{ lang.literacy_rate }}</label>
+<input type="number" name="literacy" required>
+
+
+<label>{{ lang.employment_rate }}</label>
+<input type="number" name="employment" required>
+
+
+<label>{{ lang.road_connectivity }}</label>
+<input type="number" name="roads" required>
+
+
+<label>{{ lang.healthcare_centers }}</label>
+<input type="number" name="healthcare" required>
+
+
+<label>{{ lang.water_availability }}</label>
+
+<select name="water">
+
+<option value="Yes">{{ lang.yes }}</option>
+<option value="No">{{ lang.no }}</option>
+
+</select>
+
+
+<label>{{ lang.internet }}</label>
+
+<select name="internet">
+
+    <option value="Yes">{{ lang.available }}</option>
+
+    <option value="No">{{ lang.not_available }}</option>
+
+</select>
+
+
+<br><br>
+
+<button type="submit">
+    🚀 {{ lang.generate_recommendations }}
+</button>
+
+</form>
+
+
+<hr>
+
+
+<h2>📋 {{ lang.recommended_schemes }}</h2>
+
+{% for item in recommendations %}
+
+<div class="welcome-card">
+
+<p>{{item}}</p>
+
+</div>
+
+{% endfor %}
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Infrastructure Development</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="form-box">
+
+<h1>🏗 AI Infrastructure Planner</h1>
+
+<form method="POST">
+
+<label>Road Connectivity (%)</label>
+<input type="number" name="roads" required>
+
+<label>Number of Schools</label>
+<input type="number" name="schools" required>
+
+<label>Number of Hospitals</label>
+<input type="number" name="hospitals" required>
+
+<label>Internet Connectivity</label>
+
+<select name="internet">
+
+<option>Yes</option>
+<option>No</option>
+
+</select>
+
+<br><br>
+
+<button type="submit">
+Analyze Infrastructure
+</button>
+
+</form>
+
+{% if result %}
+
+<hr>
+
+<div class="result-card">
+
+<h2>🏗 AI Infrastructure Analysis</h2>
+
+<div class="success-box">
+{{ result|safe }}
+</div>
+
+<h3>📈 AI Prediction</h3>
+
+<div class="info-box">
+
+Infrastructure quality can improve by
+<b>20-35%</b> after implementing these recommendations.
+
+</div>
+
+<h3>🤖 AI Recommendation</h3>
+
+<div class="ai-box">
+
+AI recommends improving transportation,
+education,
+healthcare,
+internet connectivity,
+renewable energy,
+and water conservation for sustainable village development.
+
+</div>
+
+</div>
+
+{% endif %}
+
+<br>
+
+<a class="start-btn" href="/dashboard">
+
+⬅ Back to Dashboard
+
+</a>
+
+</div>
+
+</body>
+
+</html>

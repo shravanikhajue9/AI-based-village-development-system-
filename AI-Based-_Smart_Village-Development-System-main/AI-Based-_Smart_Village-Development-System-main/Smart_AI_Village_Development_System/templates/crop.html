@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="form-box">
+
+<h1>🌾 {{lang.crop_title}}</h1>
+
+<form method="POST">
+
+<label>{{lang.rainfall}}</label>
+<input type="number" name="rainfall" required>
+
+<label>{{lang.water}}</label>
+
+<select name="water">
+    <option value="Low">{{lang.low}}</option>
+    <option value="Medium">{{lang.medium}}</option>
+    <option value="High">{{lang.high}}</option>
+</select>
+
+<label>{{lang.soil}}</label>
+
+<select name="soil" required>
+
+    <option value="Black">{{lang.black_soil}}</option>
+
+    <option value="Red">{{lang.red_soil}}</option>
+
+    <option value="Alluvial">{{lang.alluvial_soil}}</option>
+
+</select>
+
+<br><br>
+
+<button type="submit">{{lang.recommend}}</button>
+
+</form>
+
+{% if result %}
+
+<hr>
+
+<h2>🌾 Recommended Crops</h2>
+
+<div class="crop-box">
+    {{ result|safe }}
+</div>
+
+<hr>
+
+<h2>🤖 {{lang.ai_crop}}</h2>
+
+<ul>
+
+{% if rainfall >= 1500 and water == "High" %}
+    <li>Rice 🌾</li>
+    <li>Sugarcane 🌿</li>
+    <li>Banana 🍌</li>
+    <li>Coconut 🥥</li>
+    <li>Use drip irrigation for better water management.</li>
+
+{% elif rainfall >= 1000 %}
+    <li>Rice 🌾</li>
+    <li>Maize 🌽</li>
+    <li>Soybean 🌿</li>
+    <li>Groundnut 🥜</li>
+    <li>Use organic fertilizer to improve crop yield.</li>
+
+{% elif rainfall >= 700 %}
+    <li>Jowar 🌱</li>
+    <li>Bajra 🌾</li>
+    <li>Tur 🌿</li>
+    <li>Sunflower 🌻</li>
+    <li>Adopt rainwater harvesting.</li>
+
+{% else %}
+    <li>Bajra 🌾</li>
+    <li>Jowar 🌱</li>
+    <li>Gram 🌿</li>
+    <li>Groundnut 🥜</li>
+    <li>Use drought-resistant crop varieties.</li>
+
+{% endif %}
+
+</ul>
+
+{% endif %}
+
+<br>
+
+<a class="start-btn" href="/dashboard">
+⬅ {{lang.back_dashboard}}
+</a>
+
+</div>
+
+</body>
+</html>

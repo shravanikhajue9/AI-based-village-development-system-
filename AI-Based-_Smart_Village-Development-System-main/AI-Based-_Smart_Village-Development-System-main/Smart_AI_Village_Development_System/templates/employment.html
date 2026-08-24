@@ -1,0 +1,301 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Employment Opportunities</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="form-box">
+
+    <h1>💼 Employment Opportunities</h1>
+
+    <hr>
+
+    <h2>Suggested Employment Areas</h2>
+
+    <ul>
+        <li>🌾 Agriculture & Organic Farming</li>
+        <li>🐄 Dairy Farming</li>
+        <li>🐓 Poultry Farming</li>
+        <li>🐟 Fish Farming</li>
+        <li>🧵 Handicrafts & Bamboo Products</li>
+        <li>🏭 Small Scale Industries (MSME)</li>
+        <li>💻 Digital Service Center (CSC)</li>
+        <li>🛍 Self Help Groups (SHG)</li>
+        <li>🚜 Farm Machinery Rental Center</li>
+        <li>🌞 Solar Energy Projects</li>
+    </ul>
+
+    <hr>
+
+    <h2>Government Schemes</h2>
+
+    <ul>
+        <li>✔ PMEGP</li>
+        <li>✔ MGNREGA</li>
+        <li>✔ Skill India Mission</li>
+        <li>✔ Startup India</li>
+        <li>✔ National Rural Livelihood Mission (NRLM)</li>
+    </ul>
+
+    <hr>
+
+    <h2>AI Recommendation</h2>
+
+    <p>
+        Based on village resources, AI recommends focusing on
+        <b>MSME industries, dairy farming, skill development,
+        and self-employment programs</b> to improve employment.
+    </p>
+
+    <br>
+
+    <a class="start-btn" href="/dashboard">
+        ⬅ Back to Dashboard
+    </a>
+
+</div>
+
+</body>
+</html> -->
+<!-- <form method="POST">
+
+<label>Population</label>
+<input type="number" name="population" required>
+
+<label>Literacy Rate (%)</label>
+<input type="number" name="literacy" required>
+
+<label>Employment Rate (%)</label>
+<input type="number" name="employment" required>
+
+<label>Main Resource</label>
+<select name="resource">
+    <option>Agriculture</option>
+    <option>Forest</option>
+    <option>Water</option>
+    <option>Tourism</option>
+</select>
+
+<br><br>
+
+<button type="submit">AI Employment Suggestion</button>
+
+</form>
+{% if result %}
+
+<hr>
+
+<div class="result-card">
+
+<h2>💼 AI Employment Analysis</h2>
+
+<div class="success-box">
+{{ result|safe }}
+</div>
+
+<h3>📊 Employment Status</h3>
+
+<div class="info-box">
+
+{% if "PMEGP" in result %}
+🟢 <b>Current Status:</b> Employment opportunities need improvement.<br><br>
+
+📈 <b>AI Prediction:</b><br>
+If these recommendations are implemented, employment can improve by <b>20-30%</b> within one year.
+
+{% else %}
+🟢 <b>Current Status:</b> Village has good employment potential.<br><br>
+
+📈 <b>AI Prediction:</b><br>
+Employment can improve by <b>10-15%</b> through advanced industries.
+{% endif %}
+
+</div>
+
+<h3>🎯 Priority Level</h3>
+
+<div class="priority-box">
+
+{% if "PMEGP" in result %}
+🔴 High Priority
+{% else %}
+🟢 Medium Priority
+{% endif %}
+
+</div>
+
+<h3>🤖 AI Recommendation</h3>
+
+<div class="ai-box">
+AI recommends utilizing local resources, promoting entrepreneurship, and connecting villagers with government schemes to maximize employment opportunities.
+</div>
+
+</div>
+
+{% endif %} -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employment Recommendation</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="form-box">
+
+<h1>💼 AI Employment Recommendation</h1>
+
+<form method="POST">
+
+    <label>Population</label>
+    <input type="number" name="population" required>
+
+    <label>Literacy Rate (%)</label>
+    <input type="number" name="literacy" required>
+
+    <label>Employment Rate (%)</label>
+    <input type="number" name="employment" required>
+
+    <label>Main Resource</label>
+
+    <select name="resource">
+
+        <option value="Agriculture">Agriculture</option>
+        <option value="Forest">Forest</option>
+        <option value="Water">Water</option>
+        <option value="Tourism">Tourism</option>
+        <option value="Agriculture">Agriculture</option>
+
+        <option value="Animal Husbandry">Animal Husbandry</option>
+
+        <option value="Small Business">Small Business</option>
+
+        <option value="Shop / Trading">Shop / Trading</option>
+
+        <option value="Handicraft">Handicraft</option>
+
+        <option value="Daily Wage Labour">Daily Wage Labour</option>
+
+        <option value="Government Job">Government Job</option>
+
+        <option value="Private Job">Private Job</option>
+
+        <option value="Tourism">Tourism</option>
+
+        <option value="Other">Other</option>
+
+
+    </select>
+
+    <br><br>
+
+    <button type="submit">
+        🤖 AI Employment Suggestion
+    </button>
+
+</form>
+
+{% if result %}
+
+<hr>
+
+<div class="result-card">
+
+<h2>💼 AI Employment Analysis</h2>
+
+<div class="success-box">
+
+{{ result|safe }}
+
+</div>
+
+<h3>📊 Employment Status</h3>
+
+<div class="info-box">
+
+{% if "PMEGP" in result %}
+
+🟢 <b>Current Status :</b> Employment opportunities need improvement.
+
+<br><br>
+
+📈 <b>AI Prediction :</b>
+
+<br>
+
+Employment can improve by <b>20-30%</b> within one year by implementing the suggested employment opportunities.
+
+{% else %}
+
+🟢 <b>Current Status :</b> Village has good employment opportunities.
+
+<br><br>
+
+📈 <b>AI Prediction :</b>
+
+<br>
+
+Employment can improve by <b>10-15%</b> through advanced industries and skill development.
+
+{% endif %}
+
+</div>
+
+<h3>🎯 Priority Level</h3>
+
+<div class="priority-box">
+
+{% if "PMEGP" in result %}
+
+🔴 High Priority
+
+{% else %}
+
+🟢 Medium Priority
+
+{% endif %}
+
+</div>
+
+<h3>🤖 AI Recommendation</h3>
+
+<div class="ai-box">
+
+✔ Promote local industries.<br>
+✔ Start MSME Units.<br>
+✔ Increase Skill Development Programs.<br>
+✔ Encourage Self Help Groups (SHG).<br>
+✔ Connect villagers with Government Schemes.<br>
+✔ Promote Digital Employment and Entrepreneurship.
+
+</div>
+
+</div>
+
+{% endif %}
+
+<br><br>
+
+<a class="start-btn" href="/dashboard">
+
+⬅ Back to Dashboard
+
+</a>
+
+</div>
+
+</body>
+
+</html>

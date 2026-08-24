@@ -1,0 +1,182 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login | Smart AI Village Development System</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="login-box">
+
+        <h1>🏡 Smart AI Based Village Development System</h1>
+
+        <h2>Login</h2>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <div class="message">
+
+            {{ messages[0] }}
+
+        </div>
+        {% endif %}
+        {% endwith %}
+
+        <form method="POST">
+
+            <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                required
+            >
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+            >
+
+            <button type="submit">
+
+                Login
+
+            </button>
+
+        </form>
+
+        <p>
+
+            Don't have an account?
+
+            <a href="/signup">
+
+                Sign Up
+
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart AI Village Development System</title>
+<div class="verification-box">
+
+    <span>✅ AI Powered System</span>
+    <span>🔒 Secure Login</span>
+    <span>📊 Data Driven Prediction</span>
+    <span>🌱 Rural Development Analytics</span>
+
+</div>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+
+    <div class="left-side">
+
+        <h1>Welcome to Smart AI Village</h1>
+
+        <ul>
+            <li>✅ AI Based Village Development</li>
+            <li>✅ Government Scheme Analysis</li>
+            <li>✅ Agriculture Recommendation</li>
+            <li>✅ Local Market Analysis</li>
+            <li>✅ Employment Prediction</li>
+            <li>✅ Infrastructure Planning</li>
+            <li>✅ 10 Years Future Prediction</li>
+        </ul>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="login-box">
+
+        <h2>🔐 Login</h2>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+
+        <div class="message">
+
+            {{ messages[0] }}
+
+        </div>
+
+        {% endif %}
+        {% endwith %}
+
+        <form method="POST">
+
+            <input
+            type="text"
+            name="username"
+            placeholder="Enter Username"
+            required>
+
+            <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            required>
+
+            <button type="submit">
+
+                🚀 Login
+
+            </button>
+
+        </form>
+
+        <br>
+
+        <center>
+
+        <p>
+
+            Don't have an account?
+
+            <a href="/signup">
+
+                Sign Up
+
+            </a>
+
+        </p>
+
+        </center>
+
+    </div>
+
+</div>
+
+</body>
+</html>

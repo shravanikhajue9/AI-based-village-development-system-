@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Village Input</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="form-box">
+
+    <h1>Village Information</h1>
+
+    <form action="/predict" method="POST">
+
+        <label>{{ lang.select_village }}</label>
+
+        <select name="village_name" required>
+            <option value="">{{ lang.select_village }}</option>
+
+            {% for village in villages %}
+                <option value="{{ village }}">{{ village }}</option>
+            {% endfor %}
+        </select>
+
+        <label>{{ lang.population }}</label>
+        <input type="number" name="population" required>
+
+        <label>{{ lang.literacy }}</label>
+        <input type="number" name="literacy" required>
+
+        <label>{{ lang.tenth_pass }}</label>
+        <input type="number" name="tenth_pass" required>
+
+        <label>{{ lang.twelfth_pass }}</label>
+        <input type="number" name="twelfth_pass" required>
+
+        <label>{{ lang.rainfall }}</label>
+        <input type="number" name="rainfall" required>
+
+        <label>{{ lang.employment }}</label>
+        <input type="number" name="employment" required>
+
+        <label>{{ lang.schools }}</label>
+        <input type="number" name="schools" required>
+
+        <label>{{ lang.hospitals }}</label>
+        <input type="number" name="hospitals" required>
+
+        <label>{{ lang.local_market }}</label>
+
+        <select name="local_market" required>
+            <option value="Agriculture">{{ lang.agriculture }}</option>
+            <option value="Forest">{{ lang.forest }}</option>
+            <option value="Water">{{ lang.water }}</option>
+            <option value="Tourism">{{ lang.tourism }}</option>
+            <option value="Animal Husbandry">{{ lang.animal_husbandry }}</option>
+            <option value="Small Business">{{ lang.small_business }}</option>
+            <option value="Shop / Trading">{{ lang.shop_trading }}</option>
+            <option value="Handicraft">{{ lang.handicraft }}</option>
+            <option value="Daily Wage Labour">{{ lang.daily_wage }}</option>
+            <option value="Government Job">{{ lang.government_job }}</option>
+            <option value="Private Job">{{ lang.private_job }}</option>
+            <option value="Other">{{ lang.other }}</option>
+        </select>
+
+    
+
+        <div style="text-align:center; margin-top:40px; margin-bottom:40px;">
+            <button
+                type="submit"
+                style="
+                width:220px;
+                height:60px;
+                background:red;
+                color:white;
+                font-size:25px;
+                border-radius:15px;
+                display:block;
+                margin:auto;
+                ">
+                NEXT
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

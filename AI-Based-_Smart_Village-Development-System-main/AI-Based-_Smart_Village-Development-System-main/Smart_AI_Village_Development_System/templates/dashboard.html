@@ -1,0 +1,451 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>🏡 Smart AI</h2>
+
+<ul>
+
+<li><a href="/dashboard">🏠 Dashboard</a></li>
+
+<li><a href="/village">📊 Village Analysis</a></li>
+
+<li><a href="/crop">🌾 Crop Recommendation</a></li>
+
+<li><a href="/employment">💼 Employment</a></li>
+
+<li><a href="/infrastructure">🏫 Infrastructure</a></li>
+
+<li><a href="/report">📄 Report</a></li>
+
+<li><a href="/live_dashboard">📊 Live Statistics</a></li>
+
+<li><a href="/logout">🚪 Logout</a></li>
+
+</ul>
+
+</div>
+
+<div class="main">
+    <div class="hero">
+
+<h1>🏡 Smart AI Based Village Development System</h1>
+
+<p>AI Powered Village Analysis & Prediction</p>
+
+</div>
+
+<h1>
+
+Welcome {{username}}
+
+</h1>
+
+<h3>
+
+Smart AI Based Village Development System
+
+</h3>
+
+<div class="cards">
+
+<div class="card">
+
+<h2>98</h2>
+
+<p>Villages</p>
+
+</div>
+
+<div class="card">
+
+<h2>Aheri</h2>
+
+<p>Taluka</p>
+
+</div>
+
+<div class="card">
+
+<h2>Gadchiroli</h2>
+
+<p>District</p>
+
+</div>
+
+</div>
+
+<br><br>
+
+<a class="start-btn" href="/village">
+
+Start Village Analysis →
+
+</a>
+
+</div>
+
+</body>
+
+</html> -->
+<!-- <body class="dashboard-page"></body>
+
+<div class="dashboard-container">
+
+    Sidebar
+    <div class="sidebar">
+
+        <h2>🏡 Smart AI</h2>
+
+        <ul> -->
+            <!-- <li><a href="/dashboard">🏠 Dashboard</a></li>
+            <li><a href="/village_input">🌱 Village Analysis</a></li>
+            <li><a href="/crop">🌾 Crop Recommendation</a></li>
+            <li><a href="/employment">💼 Employment</a></li>
+            <li><a href="/infrastructure">🏗 Infrastructure</a></li>
+            <li><a href="/report">📄 Report</a></li>
+            <li><a href="/live_dashboard">📊 Live Statistics</a></li>
+            <li><a href="/logout">🚪 Logout</a></li>
+        </ul>
+
+    </div> -->
+
+
+    <!-- Main Content -->
+    <!-- <div class="dashboard-content">
+
+        <h1>🏡 Smart AI Based Village Development System</h1>
+
+        <p class="tagline">
+            AI Powered Village Analysis & Prediction
+        </p>
+
+
+        <div class="welcome-card">
+
+            <h2>Welcome {{session['user']}}</h2>
+
+            <p>
+            Smart AI Based Village Development System
+            </p>
+
+
+            <div class="stats">
+
+                <div class="stat-box">
+                    <h2>98</h2>
+                    <p>Villages</p>
+                </div> -->
+
+
+                <!-- <div class="stat-box">
+                    <h2>Aheri</h2>
+                    <p>Taluka</p>
+                </div>
+
+
+                <div class="stat-box">
+                    <h2>Gadchiroli</h2>
+                    <p>District</p>
+                </div>
+
+
+            </div>
+
+
+            <a href="/village_input" class="start-btn">
+                Start Village Analysis →
+            </a>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</body> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+<div class="dashboard-container">
+
+
+    <div class="language-box">
+
+🌐 Language
+
+<br>
+
+<a href="/change_language/en">
+English
+</a>
+
+<br>
+
+<a href="/change_language/mr">
+मराठी
+</a>
+
+<br>
+
+<a href="/change_language/hi">
+हिंदी
+</a>
+
+</div>
+
+    
+    <div class="sidebar">
+
+        <h2>🏡 Smart AI</h2>
+
+        <ul>
+
+            <ul>
+
+<li>
+<a href="/dashboard">
+🏠 {{lang.dashboard}}
+</a>
+</li>
+
+
+<li>
+<a href="/village">
+🌱 {{lang.village}}
+</a>
+</li>
+
+
+<li>
+<a href="/crop">
+🌾 {{lang.crop}}
+</a>
+</li>
+
+
+<li>
+<a href="/employment">
+💼 {{lang.employment}}
+</a>
+</li>
+
+
+<li>
+<a href="/infrastructure">
+🏗 {{lang.infrastructure}}
+</a>
+</li>
+
+<li>
+<a href="/schemes">
+🏛 {{ lang.schemes }}
+</a>
+</li>
+
+
+<li>
+<a href="/report">
+📄 {{lang.report}}
+</a>
+</li>
+
+
+<li>
+<a href="/live_dashboard">
+📊 {{ lang.live_statistics }}
+</a>
+</li>
+
+
+<li>
+<a href="/logout">
+🚪 {{lang.logout}}
+</a>
+</li>
+
+
+</ul>
+
+        </ul>
+
+    </div>
+
+<div class="dashboard-content">
+
+    <div class="hero-section">
+
+        
+        <div class="welcome-card">
+
+            <h2>Welcome {{session['user']}}</h2>
+
+            <p>Smart AI Based Village Development System</p>
+
+            <div class="stats">
+
+                <div class="stat-box">
+                    <h2>98</h2>
+                    <p>Villages</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2>Aheri</h2>
+                    <p>Taluka</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2>Gadchiroli</h2>
+                    <p>District</p>
+                </div>
+
+            </div>
+
+            <a href="/village" class="start-btn">
+                {{ lang.start_analysis }} →
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="dashboard-page">
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <h2>🏡 Smart AI</h2>
+
+        <div class="language-box">
+            🌐 Language <br><br>
+
+            <a href="/change_language/en">English</a>
+            <a href="/change_language/mr">मराठी</a>
+            <a href="/change_language/hi">हिंदी</a>
+        </div>
+
+        <ul>
+
+            <li><a href="/dashboard">🏠 {{lang.dashboard}}</a></li>
+
+            <li><a href="/village">🌱 {{lang.village}}</a></li>
+
+            <li><a href="/crop">🌾 {{lang.crop}}</a></li>
+
+            <li><a href="/employment">💼 {{lang.employment}}</a></li>
+
+            <li><a href="/infrastructure">🏗 {{lang.infrastructure}}</a></li>
+
+            <li><a href="/schemes">🏛 {{lang.schemes}}</a></li>
+
+            <li><a href="/report">📄 {{lang.report}}</a></li>
+
+            <li><a href="/live_dashboard">📊 {{lang.live_statistics}}</a></li>
+
+            <li> <a href="#" onclick="confirmLogout()">🚪 {{ lang.logout }}</a></li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main -->
+
+    <div class="dashboard-content">
+
+    <div class="hero-section">
+
+        <div class="welcome-card">
+
+        <h2>Welcome {{ session['user'] }}</h2>
+
+        <p>Smart AI Based Village Development System</p>
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <h2>98</h2>
+                <p>Villages</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>Aheri</h2>
+                <p>Taluka</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>Gadchiroli</h2>
+                <p>District</p>
+            </div>
+
+        </div>
+
+        <a href="/village" class="start-btn">
+            {{ lang.start_analysis }} →
+        </a>
+
+       </div>
+
+    </div>
+
+</div>
+
+</div>
+<script>
+function confirmLogout() {
+    if (confirm("Are you sure you want to logout?")) {
+        window.location.href = "/logout";
+    }
+}
+</script>
+</body>
+</html>

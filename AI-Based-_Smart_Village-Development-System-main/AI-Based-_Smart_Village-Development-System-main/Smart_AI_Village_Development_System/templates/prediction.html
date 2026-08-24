@@ -1,0 +1,767 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="report-container">
+
+<div class="report-header">
+
+    <div class="header-overlay">
+
+        <h1>🏡 Smart AI Based Village Development System</h1>
+
+        <h3>Village Development Analysis Report</h3>
+
+    </div>
+
+</div>
+
+<div class="form-box">
+
+<div class="report-header">
+
+<div class="overlay">
+
+<h1>🏡 Smart AI Based Village Development System</h1>
+
+<h3>Village Development Prediction Report</h3>
+
+<p>
+AI Powered Analysis | Crop Recommendation | Employment | Infrastructure
+</p>
+
+</div>
+
+</div>
+<h1>🏡 Smart Village Development Report</h1>
+
+<hr>
+
+<div class="section">
+
+<h2>📊 Village Details</h2>
+
+<p><b>Population :</b> {{ population }}</p>
+<p><b>Literacy :</b> {{ literacy }}%</p>
+<p><b>Rainfall :</b> {{ rainfall }} mm</p>
+<p><b>Schools :</b> {{ schools }}</p>
+<p><b>Hospitals :</b> {{ hospitals }}</p>
+<p><b>Employment :</b> {{ employment }}%</p>
+
+</div>
+
+<hr>
+
+
+<div class="section">
+
+<h2>🤖 AI Development Score</h2>
+
+<h1 style="color:green;">{{ score }}</h1>
+
+{% if score >= 80 %}
+<h3 style="color:green;">⭐⭐⭐⭐⭐ Excellent Development</h3>
+
+{% elif score >= 60 %}
+<h3 style="color:orange;">⭐⭐⭐⭐ Good Development</h3>
+
+{% else %}
+<h3 style="color:red;">⭐⭐ Needs Improvement</h3>
+{% endif %}
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>📈 Future Development Score</h2>
+
+<h1 style="color:blue;">{{ future_score }}%</h1>
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>⚠ Current Problems</h2>
+
+<ul>
+{% for p in problems %}
+<li>{{ p }}</li>
+{% endfor %}
+</ul>
+
+</div>
+
+<hr>
+<div class="section">
+
+<h2>🚀 AI Development Plan</h2>
+
+<ul>
+{% for item in development_plan %}
+<li>{{ item }}</li>
+{% endfor %}
+</ul>
+
+</div>
+
+<hr>
+<div class="section">
+
+<h2>🏥 Infrastructure Suggestions</h2>
+
+<ul>
+{% for s in suggestions %}
+<li>{{ s }}</li>
+{% endfor %}
+</ul>
+
+</div>
+
+<hr>
+<div class="section">
+
+<h2>🌾 Recommended Crops</h2>
+
+<ul>
+
+{% if rainfall >= 1500 %}
+
+<li>🌾 Rice</li>
+<li>🌿 Sugarcane</li>
+<li>🍌 Banana</li>
+<li>🥥 Coconut</li>
+
+{% elif rainfall >= 1000 %}
+
+<li>🌾 Rice</li>
+<li>🌽 Maize</li>
+<li>🌿 Soybean</li>
+<li>🥜 Groundnut</li>
+
+{% elif rainfall >= 700 %}
+
+<li>🌱 Jowar</li>
+<li>🌾 Bajra</li>
+<li>🌿 Tur</li>
+<li>🌻 Sunflower</li>
+
+{% else %}
+
+<li>🌾 Cotton</li>
+<li>🌱 Gram</li>
+<li>🥜 Groundnut</li>
+<li>🌾 Bajra</li>
+
+{% endif %}
+
+</ul>
+</div>
+<hr>
+
+<h2>💼 Employment Suggestions</h2>
+
+<ul>
+
+{% if employment < 40 %}
+
+<li>🏭 Start MSME Industries</li>
+<li>🎓 Skill Development Centre</li>
+<li>✔ PMEGP Scheme</li>
+<li>🐄 Dairy Farming</li>
+<li>🐓 Poultry Farming</li>
+
+{% elif employment < 70 %}
+
+<li>🛍 Promote Small Businesses</li>
+<li>👨‍👩‍👧 Self Help Groups</li>
+<li>🏭 Food Processing Units</li>
+<li>🚀 Startup Support</li>
+
+{% else %}
+
+<li>💻 Digital Service Centres</li>
+<li>🌐 IT Based Jobs</li>
+<li>🚜 Smart Agriculture</li>
+<li>🏕 Tourism Development</li>
+
+{% endif %}
+
+</ul>
+
+<hr>
+
+<h2>📈 Expected Development After 1 Year</h2>
+
+<h1 style="color:green;">{{ future_score }}%</h1>
+
+{% if future_score >= 90 %}
+
+<h3 style="color:green;">
+⭐⭐⭐⭐⭐ Village can become Highly Developed
+</h3>
+
+{% elif future_score >= 75 %}
+
+<h3 style="color:orange;">
+⭐⭐⭐⭐ Village Development will Improve
+</h3>
+
+{% else %}
+
+<h3 style="color:red;">
+More Development Work Required
+</h3>
+
+{% endif %}
+
+<hr>
+<div class="section">
+<h2>📊 Village Analysis Graph</h2>
+
+<img src="{{ url_for('static', filename='graph.png') }}" width="700">
+</div>
+<hr>
+<div class="section">
+<a class="start-btn" href="/download_report">
+📄 Download Report
+</div>
+</a>
+
+<br><br>
+<div class="section">
+<a class="start-btn" href="/dashboard">
+⬅ Back to Dashboard
+</a>
+
+</div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Village Development Report</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<!-- <style>
+
+body{
+
+margin:0;
+padding:0;
+
+font-family:Segoe UI,sans-serif;
+
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("{{ url_for('static', filename='images/village_bg.png') }}");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+}
+
+.report{
+
+width:90%;
+max-width:1100px;
+
+margin:40px auto;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(12px);
+
+border-radius:20px;
+
+padding:35px;
+
+color:white;
+
+box-shadow:0 10px 30px rgba(0,0,0,.5);
+
+}
+
+.hero{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:30px;
+
+}
+
+.hero-text h1{
+
+font-size:38px;
+
+margin-bottom:10px;
+
+}
+
+.hero-text p{
+
+font-size:18px;
+
+opacity:.9;
+
+}
+
+.hero img{
+
+width:260px;
+
+border-radius:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.4);
+
+}
+
+.section{
+
+background:rgba(255,255,255,.15);
+
+padding:25px;
+
+margin-top:25px;
+
+border-radius:18px;
+
+}
+
+.section h2{
+
+margin-bottom:20px;
+
+color:#00ff99;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+}
+
+.item{
+
+background:rgba(255,255,255,.12);
+
+padding:15px;
+
+border-radius:12px;
+
+font-size:18px;
+
+}
+
+.score{
+
+font-size:65px;
+
+font-weight:bold;
+
+color:#00ff99;
+
+text-align:center;
+
+}
+
+ul{
+
+padding-left:25px;
+
+line-height:35px;
+
+font-size:18px;
+
+}
+
+.start-btn{
+
+display:inline-block;
+
+padding:14px 28px;
+
+background:#00c853;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+
+font-size:18px;
+
+margin-top:20px;
+
+}
+
+.start-btn:hover{
+
+background:#009624;
+
+}
+
+.graph{
+
+width:100%;
+
+border-radius:15px;
+
+margin-top:20px;
+
+}
+
+</style> -->
+
+</head>
+
+<body>
+
+<div class="report">
+
+<div class="hero">
+
+<div class="hero-text">
+
+<h1>🏡 Smart AI Based Village Development Report</h1>
+
+<p>AI Prediction & Future Development Analysis</p>
+
+</div>
+
+<div class="hero">
+    <img src="/static/images/village.jpg.png" alt="Village Image" style="width:350px;height:auto;border-radius:15px;">
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🏡 {{ village_name }} Village Report</h2>
+
+<div class="grid">
+
+<div class="item">
+<b>👨 Population</b><br>
+{{ population }}
+</div>
+
+<div class="item">
+<b>📖 Literacy</b><br>
+{{ literacy }}%
+</div>
+
+<div class="item">
+<b>🌧 Rainfall</b><br>
+{{ rainfall }} mm
+</div>
+
+<div class="item">
+<b>🏫 Schools</b><br>
+{{ schools }}
+</div>
+
+<div class="item">
+<b>🏥 Hospitals</b><br>
+{{ hospitals }}
+</div>
+
+<div class="item">
+<b>🌱 Main Resource</b><br>
+{{ resource }}
+</div>
+
+<div class="item">
+<b>🛒 Local Market</b><br>
+{{ local_market }}
+</div>
+
+<div class="item">
+<b>💼 Employment</b><br>
+{{ employment }}%
+</div>
+
+</div>
+
+</div>
+<div class="section">
+
+<h2>🤖 AI Development Score</h2>
+
+<div class="score">
+
+{{ score }}
+
+</div>
+
+{% if score >= 80 %}
+
+<h3 style="color:#7CFC00;text-align:center;">
+⭐⭐⭐⭐⭐ Excellent Development
+</h3>
+
+{% elif score >= 60 %}
+
+<h3 style="color:orange;text-align:center;">
+⭐⭐⭐⭐ Good Development
+</h3>
+
+{% else %}
+
+<h3 style="color:red;text-align:center;">
+⭐⭐ Needs Improvement
+</h3>
+
+{% endif %}
+
+</div>
+
+<div class="section">
+
+<h2>📈 Future Development Score</h2>
+
+<div class="score" style="color:#29b6f6;">
+
+{{ future_score }}%
+
+</div>
+
+{% if future_score >= 90 %}
+
+<h3 style="color:#7CFC00;text-align:center;">
+Village can become Highly Developed 🌟
+</h3>
+
+{% elif future_score >= 75 %}
+
+<h3 style="color:orange;text-align:center;">
+Village Development will Improve 📈
+</h3>
+
+{% else %}
+
+<h3 style="color:red;text-align:center;">
+More Development Work Required
+</h3>
+
+{% endif %}
+
+</div>
+
+<div class="section">
+
+<h2>⚠ Current Problems</h2>
+
+<ul>
+
+{% for p in problems %}
+
+<li>{{ p }}</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>🚀 AI Development Plan</h2>
+
+<ul>
+
+{% for item in development_plan %}
+
+<li>{{ item }}</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>🏥 Infrastructure Suggestions</h2>
+
+<ul>
+
+{% for s in suggestions %}
+
+<li>{{ s }}</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+<div class="section">
+
+<h2>🌾 AI Crop Recommendation</h2>
+
+{% if rainfall >= 1500 %}
+
+<ul>
+
+<li>🌾 Rice</li>
+<li>🌿 Sugarcane</li>
+<li>🍌 Banana</li>
+<li>🥥 Coconut</li>
+
+</ul>
+
+<p><b>🤖 AI Advice:</b> High rainfall area. Focus on water-intensive crops and improve irrigation management.</p>
+
+{% elif rainfall >= 1000 %}
+
+<ul>
+
+<li>🌾 Rice</li>
+<li>🌽 Maize</li>
+<li>🌿 Soybean</li>
+<li>🥜 Groundnut</li>
+
+</ul>
+
+<p><b>🤖 AI Advice:</b> Medium rainfall. Mixed cropping and organic farming are recommended.</p>
+
+{% elif rainfall >= 700 %}
+
+<ul>
+
+<li>🌱 Jowar</li>
+<li>🌾 Bajra</li>
+<li>🌿 Tur</li>
+<li>🌻 Sunflower</li>
+
+</ul>
+
+<p><b>🤖 AI Advice:</b> Moderate rainfall. Promote drought-resistant crops.</p>
+
+{% else %}
+
+<ul>
+
+<li>🌾 Cotton</li>
+<li>🌱 Gram</li>
+<li>🥜 Groundnut</li>
+<li>🌾 Bajra</li>
+
+</ul>
+
+<p><b>🤖 AI Advice:</b> Low rainfall. Use drip irrigation and water conservation methods.</p>
+
+{% endif %}
+
+</div>
+
+<div class="section">
+
+<h2>💼 AI Employment Suggestions</h2>
+
+{% if employment < 40 %}
+
+<ul>
+
+<li>🏭 MSME Industries</li>
+<li>🎓 Skill Development Centre</li>
+<li>🐄 Dairy Farming</li>
+<li>🐓 Poultry Farming</li>
+<li>🐟 Fish Farming</li>
+<li>🌾 Organic Farming</li>
+<li>✔ PMEGP Scheme</li>
+<li>✔ MGNREGA</li>
+
+</ul>
+
+<p><b>📈 AI Prediction:</b> Employment can improve by <span style="color:#00ff99;">30%</span> within one year.</p>
+
+{% elif employment < 70 %}
+
+<ul>
+
+<li>🛍 Self Help Groups</li>
+<li>🏭 Food Processing Units</li>
+<li>🚜 Smart Agriculture</li>
+<li>💻 CSC Digital Service Centre</li>
+<li>✔ Startup India</li>
+
+</ul>
+
+<p><b>📈 AI Prediction:</b> Employment can improve by <span style="color:#00ff99;">20%</span>.</p>
+
+{% else %}
+
+<h3 style="color:red;">
+⚠ Village requires significant development.
+</h3>
+
+<p>
+AI recommends focusing on literacy, employment,
+basic infrastructure, water management and government
+schemes.
+</p>
+
+{% endif %}
+
+</div>
+
+
+<!-- NGO / Company Recommendation -->
+
+<div class="section">
+
+<h2>🤝 Recommended NGOs & CSR Partners</h2>
+
+{% for partner in partners %}
+
+<p>✅ {{ partner }}</p>
+
+{% endfor %}
+
+</div>
+
+
+<div style="text-align:center;margin-top:40px;">
+
+<a class="start-btn" href="/download_report">
+📄 Download Report
+</a>
+
+&nbsp;&nbsp;&nbsp;
+
+<a class="start-btn" href="/dashboard">
+🏠 Back to Dashboard
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

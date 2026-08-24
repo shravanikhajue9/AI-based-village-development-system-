@@ -1,0 +1,1756 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0b1f59,#183a8f,#0d47a1);
+min-height:100vh;
+color:#fff;
+overflow-x:hidden;
+}
+
+/* Main Layout */
+
+.container{
+width:100%;
+min-height:100vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:60px 8%;
+}
+
+/* Left Side */
+
+.left-side{
+width:48%;
+}
+
+.left-side h1{
+font-size:55px;
+font-weight:bold;
+margin-bottom:35px;
+}
+
+.left-side ul{
+list-style:none;
+}
+
+.left-side ul li{
+font-size:22px;
+margin:25px 0;
+}
+
+/* Right Side */
+
+.login-box{
+width:470px;
+padding:45px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(18px);
+border-radius:25px;
+box-shadow:0 10px 35px rgba(0,0,0,.45);
+}
+
+.login-box h2{
+text-align:center;
+font-size:42px;
+margin-bottom:35px;
+}
+
+input,
+select{
+width:100%;
+padding:16px;
+margin:12px 0;
+border:none;
+border-radius:12px;
+font-size:17px;
+outline:none;
+background:white;
+}
+
+button{
+width:100%;
+padding:16px;
+border:none;
+border-radius:12px;
+background:#17c653;
+color:white;
+font-size:20px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#0fa845;
+transform:scale(1.02);
+}
+
+.form-box{
+width:900px;
+margin:40px auto;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(16px);
+border-radius:20px;
+padding:35px;
+box-shadow:0 8px 30px rgba(0,0,0,.35);
+color:white;
+}
+
+.form-box h1{
+text-align:center;
+font-size:38px;
+margin-bottom:20px;
+}
+
+.form-box h2{
+color:#7CFC00;
+margin:20px 0 10px;
+}
+
+.form-box p,
+.form-box li{
+font-size:18px;
+line-height:32px;
+}
+
+.form-box ul{
+margin-left:25px;
+}
+
+hr{
+margin:25px 0;
+border:1px solid rgba(255,255,255,.2);
+}
+
+img{
+display:block;
+margin:auto;
+max-width:100%;
+border-radius:15px;
+}
+
+.start-btn{
+display:inline-block;
+padding:14px 30px;
+background:#17c653;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-size:18px;
+margin-top:20px;
+}
+
+.start-btn:hover{
+background:#0fa845;
+}
+
+.result-card{
+background:white;
+color:#222;
+padding:25px;
+border-radius:15px;
+margin-top:25px;
+}
+
+.success-box,
+.info-box,
+.priority-box,
+.ai-box{
+padding:18px;
+border-radius:10px;
+margin-top:15px;
+font-size:18px;
+}
+
+.success-box{
+background:#d4edda;
+}
+
+.info-box{
+background:#d1ecf1;
+}
+
+.priority-box{
+background:#fff3cd;
+}
+
+.ai-box{
+background:#ede7f6;
+}
+
+.crop-box{
+background:#d4edda;
+padding:20px;
+border-radius:12px;
+font-size:20px;
+line-height:40px;
+color:#155724;
+font-weight:bold;
+}
+.message{
+background:#ff4d4d;
+padding:12px;
+border-radius:10px;
+margin-bottom:20px;
+text-align:center;
+font-weight:bold;
+color:white;
+}
+
+.left-side{
+width:48%;
+color:white;
+}
+
+.left-side h1{
+font-size:55px;
+margin-bottom:40px;
+text-shadow:2px 2px 8px black;
+}
+
+.left-side ul{
+list-style:none;
+padding:0;
+}
+
+.left-side ul li{
+font-size:22px;
+margin:22px 0;
+line-height:1.6;
+}
+/* ================= PREMIUM SMART AI UI ================= */
+
+body{
+margin:0;
+padding:0;
+font-family:'Segoe UI',sans-serif;
+
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("../images/smart_ai_bg.png.png");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+
+.form-box{
+
+width:900px;
+max-width:95%;
+
+margin:40px auto;
+
+padding:35px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(18px);
+
+box-shadow:0 10px 35px rgba(0,0,0,.45);
+
+color:white;
+
+animation:fade .8s;
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.section{
+
+background:rgba(255,255,255,.10);
+
+margin:20px 0;
+
+padding:20px;
+
+border-radius:18px;
+
+transition:.3s;
+
+}
+
+.section:hover{
+
+transform:translateY(-5px);
+
+background:rgba(255,255,255,.16);
+
+}
+
+.section h2{
+
+color:#00ff99;
+
+margin-bottom:15px;
+
+font-size:28px;
+
+}
+
+.section p{
+
+font-size:18px;
+
+margin:10px 0;
+
+}
+
+.section ul{
+
+padding-left:25px;
+
+}
+
+.section li{
+
+margin:10px 0;
+
+font-size:18px;
+
+}
+
+.score{
+
+font-size:65px;
+
+font-weight:bold;
+
+text-align:center;
+
+color:#00ff99;
+
+text-shadow:0 0 15px #00ff99;
+
+}
+
+.future{
+
+font-size:60px;
+
+text-align:center;
+
+font-weight:bold;
+
+color:#29b6f6;
+
+text-shadow:0 0 15px #29b6f6;
+
+}
+
+img{
+
+width:100%;
+
+border-radius:15px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.4);
+
+}
+
+.start-btn{
+
+display:inline-block;
+
+padding:15px 28px;
+
+margin:12px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:bold;
+
+background:linear-gradient(45deg,#00c853,#43a047);
+
+color:white;
+
+transition:.3s;
+
+}
+
+.start-btn:hover{
+
+transform:scale(1.05);
+
+}
+
+hr{
+
+border:none;
+
+height:2px;
+
+background:rgba(255,255,255,.2);
+
+margin:25px 0;
+
+}
+body{
+
+margin:0;
+padding:0;
+
+font-family:'Segoe UI',sans-serif;
+
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("../images/smart_ai_bg.png.png");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+
+}
+
+.report{
+
+width:92%;
+max-width:1200px;
+
+margin:40px auto;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(12px);
+
+border-radius:25px;
+
+padding:35px;
+
+color:white;
+
+box-shadow:0 12px 30px rgba(0,0,0,.5);
+
+}
+
+.hero{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:30px;
+
+}
+
+.hero img{
+
+width:320px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.5);
+
+}
+
+.hero-text h1{
+
+font-size:42px;
+
+margin-bottom:10px;
+
+}
+
+.hero-text p{
+
+font-size:20px;
+
+}
+
+.section{
+
+background:rgba(255,255,255,.15);
+
+padding:25px;
+
+margin-top:25px;
+
+border-radius:20px;
+
+transition:.3s;
+
+}
+
+.section:hover{
+
+transform:translateY(-5px);
+
+background:rgba(255,255,255,.20);
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+}
+
+.item{
+    background:rgba(0,0,0,0.45);
+    border:1px solid rgba(255,255,255,0.25);
+    padding:18px;
+    border-radius:15px;
+    font-size:20px;
+    color:#ffffff;
+    font-weight:600;
+    box-shadow:0 5px 15px rgba(0,0,0,0.35);
+    transition:0.3s;
+}
+
+.item:hover{
+    background:rgba(0,0,0,0.60);
+    transform:translateY(-3px);
+}
+
+.score{
+
+font-size:70px;
+
+font-weight:bold;
+
+text-align:center;
+
+color:#00ff99;
+
+}
+
+.graph{
+
+width:100%;
+
+border-radius:15px;
+
+margin-top:20px;
+
+}
+
+.start-btn{
+
+display:inline-block;
+
+padding:15px 30px;
+
+background:#00c853;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+font-size:18px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.start-btn:hover{
+
+background:#00a63e;
+
+transform:scale(1.05);
+
+}
+.dashboard-page{
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.20),
+        rgba(0,0,0,0.20)
+    ),
+    url("/static/images/smart_ai_bg.png.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    min-height:100vh;
+}
+/* ===== Dashboard Professional Layout ===== */
+
+
+.dashboard-page{
+    overflow-x:hidden;
+}
+
+
+/* Sidebar Improvement */
+
+.sidebar{
+
+    width:260px;
+
+    padding:30px 25px;
+
+    background:rgba(0,40,30,0.85);
+
+}
+
+
+.sidebar h2{
+
+    margin-bottom:45px;
+
+    font-size:30px;
+
+}
+
+
+
+.sidebar ul li{
+
+    margin:25px 0;
+
+}
+
+
+
+.sidebar a{
+
+    color:white;
+
+    font-size:18px;
+
+    display:block;
+
+    padding:8px 10px;
+
+    border-radius:10px;
+
+}
+
+
+
+.sidebar a:hover{
+
+    background:rgba(255,255,255,0.15);
+
+    padding-left:18px;
+
+}
+
+
+
+/* Main Content */
+
+.dashboard-content{
+
+    padding:70px 60px;
+
+    margin-left:20px;
+
+}
+
+
+
+.dashboard-content{
+    margin-left:300px;
+    padding:50px;
+    width:calc(100% - 300px);
+}
+
+
+
+.tagline{
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+    color:#d8ffe9;
+
+}
+
+
+
+/* Welcome Card */
+
+.welcome-card{
+    width:700px;
+    max-width:95%;
+
+    margin-top:40px;
+    margin-left:0;
+    margin-right:auto;
+
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+
+    border-radius:25px;
+    padding:35px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.45);
+
+    color:white;
+}
+
+
+.welcome-card h2{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.welcome-card p{
+
+    font-size:18px;
+
+}
+
+
+
+/* Stats Boxes */
+
+.stats{
+
+    display:flex;
+
+    gap:30px;
+
+    margin-top:35px;
+
+}
+
+
+
+.stat-box{
+
+    background:rgba(255,255,255,0.20);
+
+    padding:20px;
+
+    width:180px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+}
+
+
+
+.stat-box h2{
+
+    font-size:35px;
+
+    color:#00ff99;
+
+    margin:0;
+
+}
+
+
+
+.stat-box p{
+
+    margin-top:10px;
+
+}
+
+
+
+/* Button */
+
+.start-btn{
+
+    margin-top:35px;
+
+    padding:15px 40px;
+
+    border-radius:30px;
+
+    font-size:18px;
+
+    background:#00d66b;
+
+    display:inline-block;
+
+}
+
+
+
+.start-btn:hover{
+
+    background:#00a854;
+
+}
+.stat-box{
+    width:180px;
+    min-height:100px;
+    overflow:hidden;
+}
+
+
+.stat-box h2{
+    font-size:28px;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+}
+.verification-box{
+
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:20px;
+
+}
+
+
+.verification-box span{
+
+    background:rgba(255,255,255,0.15);
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:14px;
+    border:1px solid rgba(255,255,255,0.3);
+
+}
+.auth-page{
+
+    margin:0;
+    padding:0;
+    min-height:100vh;
+
+    font-family:Arial, sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("../images/smart_ai_bg.png.png");
+
+    background-size:cover;
+    background-position:center;
+
+}
+body.auth-page{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("../images/smart_ai_bg.png.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+}
+.next-btn{
+    text-align:center;
+    margin-top:30px;
+    padding-bottom:30px;
+}
+
+.next-btn button{
+    width:200px;
+    padding:14px;
+    background:#00c853;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-size:20px;
+    cursor:pointer;
+    display:inline-block;
+}
+
+.next-btn button:hover{
+    background:#009624;
+}
+.form-box{
+    height:auto !important;
+    max-height:none !important;
+    overflow:visible !important;
+    padding-bottom:50px !important;
+}
+
+.form-box form{
+    height:auto;
+}
+
+.next-btn{
+    position:relative;
+    margin-top:40px;
+    padding-bottom:20px;
+    height:auto;
+}
+
+.next-btn button{
+    height:50px;
+    width:220px;
+    display:block;
+    margin:0 auto;
+    background:#00c853;
+    color:white;
+    font-size:20px;
+    border-radius:12px;
+}
+.hero-section{
+    display:flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    gap:30px;
+    flex-wrap:nowrap;   /* Niche jaane se rokega */
+    width:100%;
+}
+
+.hero-text{
+    flex:1;
+    min-width:0;
+}
+
+.hero-text h1{
+    font-size:55px;
+    line-height:1.2;
+    color:white;
+}
+
+.hero-text .tagline{
+    font-size:24px;
+    color:#d8ffe9;
+    margin-top:20px;
+}
+
+.welcome-card{
+    width:500px;
+    min-width:500px;
+    margin:0;
+    flex-shrink:0;
+}
+/* ================= DASHBOARD FINAL FIX ================= */
+
+/* ================= DASHBOARD ================= */
+
+.dashboard-page{
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+.dashboard-container{
+    display:flex;
+}
+
+/* Sidebar */
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:260px;
+    height:100vh;
+
+    background:rgba(0,40,30,.88);
+
+    padding:30px 20px;
+    overflow-y:auto;
+}
+
+.sidebar h2{
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    margin:18px 0;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:10px 15px;
+    border-radius:10px;
+}
+
+.sidebar a:hover{
+    background:rgba(255,255,255,.15);
+}
+
+/* Language */
+
+.language-box{
+    margin-bottom:35px;
+}
+
+.language-box a{
+    display:block;
+    margin:8px 0;
+    color:white;
+    text-decoration:none;
+}
+
+/* Main */
+
+.dashboard-content{
+
+    margin-left:260px;
+
+    width:calc(100% - 260px);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    padding-top:140px;
+}
+
+/* Hero */
+
+.hero-section{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+/* Welcome Card */
+
+.welcome-card{
+    width:850px;
+    max-width:95%;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+    border-radius:25px;
+    padding:35px 50px;
+    box-shadow:0 10px 35px rgba(0,0,0,.45);
+    color:white;
+}
+
+.welcome-card h2{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+}
+
+.welcome-card p{
+
+    font-size:18px;
+
+    margin-bottom:30px;
+}
+
+/* Stats */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:15px;      /* 30px se kam karke 15px */
+    margin:35px 0;
+    flex-wrap:nowrap;
+}
+
+.stat-box{
+    flex:1;
+    min-width:190px;
+    text-align:center;
+    background:rgba(255,255,255,.15);
+    border-radius:18px;
+    padding:18px;
+}
+
+.stat-box h2{
+    color:#00ff99;
+    font-size:26px;
+    white-space:nowrap;   /* Word ko ek hi line me rakhega */
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.start-btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:#00c853;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-weight:bold;
+}
+
+.start-btn:hover{
+
+    background:#009624;
+}
+/* ===== Welcome Card Center Bottom Position ===== */
+
+.dashboard-content{
+    margin-left:260px !important;
+    width:calc(100% - 260px) !important;
+
+    display:flex !important;
+    justify-content:center !important;
+    align-items:flex-start !important;
+
+    padding-top:250px !important;
+}
+
+
+.hero-section{
+    width:100%;
+    display:flex !important;
+    justify-content:center !important;
+}
+
+
+.welcome-card{
+
+    width:560px !important;
+
+    margin:0 auto !important;
+
+    position:relative;
+
+    left:0 !important;
+
+    top:0 !important;
+
+    text-align:center;
+
+}
+/* ===== LOGIN LEFT TEXT ALIGNMENT ===== */
+
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 4%;
+}
+
+
+.left-side{
+
+    width:48%;
+
+    text-align:left;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+.left-side h1{
+
+    font-size:55px;
+
+    text-align:left;
+
+    margin-bottom:35px;
+
+}
+
+
+.left-side ul{
+
+    padding:0;
+
+    margin:0;
+
+}
+
+
+.left-side ul li{
+
+    text-align:left;
+
+    font-size:22px;
+
+    margin:20px 0;
+
+}
+/* Login Heading Size */
+
+.left-side h1{
+    font-size:40px !important;
+    line-height:1.2;
+    margin-bottom:25px;
+}
+/* Login Page Sign Up Link */
+
+.login-box a:link,
+.login-box a:visited{
+    color:#00ff99 !important;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.login-box a:hover{
+    color:#7CFC00 !important;
+    text-decoration:underline;
+}
+/* FINAL STAT BOX ALIGNMENT */
+
+.stats{
+    display:flex !important;
+    justify-content:center !important;
+    gap:20px !important;
+}
+
+.stat-box{
+    width:170px !important;
+    height:170px !important;
+    flex:none !important;
+}
+
+.stat-box:first-child{
+    margin-right:20px !important;
+}
+
+.stat-box:last-child{
+    margin-left:20px !important;
+}
+/* ===== Fix Stat Boxes Inside Welcome Card ===== */
+
+.welcome-card{
+    width: 900px !important;
+    padding: 40px 70px !important;   /* Left & Right me extra space */
+}
+
+.stats{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 20px !important;
+}
+
+.stat-box{
+    width: 180px !important;
+    flex: 0 0 180px !important;
+}
+/* ===== Government Scheme UI ===== */
+
+.form-box{
+
+    width:90%;
+    max-width:1150px;
+
+    margin:30px auto;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
+
+    color:white;
+
+}
+
+.form-box h1{
+
+    text-align:center;
+
+    font-size:55px;
+
+    margin-bottom:35px;
+
+}
+
+.form-box label{
+
+    font-size:22px;
+
+    font-weight:600;
+
+    display:block;
+
+    margin-top:20px;
+
+}
+
+.form-box input,
+.form-box select{
+
+    width:100%;
+
+    padding:18px;
+
+    margin-top:10px;
+
+    margin-bottom:25px;
+
+    border:none;
+
+    border-radius:15px;
+
+    font-size:18px;
+
+}
+
+.form-box button{
+
+    width:100%;
+
+    padding:18px;
+
+    font-size:22px;
+
+    background:#00c853;
+
+    border:none;
+
+    border-radius:15px;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+.form-box button:hover{
+
+    background:#009624;
+
+}
+.report-card{
+    max-width:1000px;
+    margin:40px auto;
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.report-header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.report-header h1{
+    color:#0d47a1;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.report-header p{
+    color:#666;
+    font-size:18px;
+}
+
+.report-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.report-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    background:#f8f9fc;
+    border-left:6px solid #0d47a1;
+    border-radius:12px;
+    padding:20px;
+    transition:.3s;
+}
+
+.report-item:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.report-item span{
+    font-size:34px;
+}
+
+.report-item h3{
+    color:#0d47a1;
+    margin-bottom:5px;
+}
+
+.report-item p{
+    color:#666;
+    font-size:15px;
+}
+
+.report-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:40px;
+}
+
+.report-buttons .btn{
+    padding:14px 28px;
+    border-radius:10px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:600;
+}
+
+.btn-success{
+    background:#16a34a;
+}
+
+.btn-primary{
+    background:#0d47a1;
+}
+.report-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+        url("../images/smart_ai_bg.png.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.report-container{
+    width:90%;
+    max-width:1200px;
+
+    padding:45px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.20);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.report-title{
+    color:#fff;
+    font-size:52px;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.report-subtitle{
+    color:#eee;
+    text-align:center;
+    margin-bottom:35px;
+    font-size:18px;
+}
+
+.report-box{
+    display:flex;
+    align-items:center;
+    gap:22px;
+
+    padding:22px;
+
+    margin-bottom:20px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.14);
+
+    transition:.3s;
+}
+
+.report-box:hover{
+    background:rgba(255,255,255,.22);
+    transform:translateY(-4px);
+}
+
+.report-box:hover{
+    transform:translateY(-5px);
+    background:rgba(255,255,255,.25);
+}
+
+.report-box span{
+    font-size:35px;
+}
+
+.report-box h3{
+    color:white;
+    margin-bottom:6px;
+    font-size:24px;
+}
+
+.report-box p{
+    color:#eee;
+    font-size:16px;
+}
+
+.report-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:40px;
+}
+
+.green-btn,
+.blue-btn{
+    text-decoration:none;
+    color:white;
+    padding:15px 35px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:600;
+}
+
+.green-btn{
+    background:#00c853;
+}
+
+.blue-btn{
+    background:#1565c0;
+}
+.glass-card{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+}
+/* ================= REPORT PAGE ================= */
+
+body.report-page{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+        url("../images/smart_ai_bg.png.png") center center/cover no-repeat fixed;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.report-container{
+
+    width:90%;
+    max-width:1200px;
+
+    padding:45px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:30px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.45);
+
+    color:white;
+}
+
+.report-title{
+
+    text-align:center;
+
+    font-size:58px;
+
+    margin-bottom:10px;
+
+    color:white;
+}
+
+.report-subtitle{
+
+    text-align:center;
+
+    font-size:22px;
+
+    margin-bottom:40px;
+
+    color:#f0f0f0;
+}
+
+.report-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    background:rgba(255,255,255,.12);
+
+    padding:22px;
+
+    border-radius:18px;
+
+    margin-bottom:22px;
+
+    transition:.3s;
+}
+
+.report-box:hover{
+
+    background:rgba(255,255,255,.22);
+
+    transform:translateY(-5px);
+}
+
+.report-box span{
+
+    font-size:42px;
+}
+
+.report-box h3{
+
+    color:white;
+
+    font-size:28px;
+
+    margin-bottom:5px;
+}
+
+.report-box p{
+
+    color:#f2f2f2;
+
+    font-size:18px;
+}
+
+.report-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin-top:35px;
+}
+
+.green-btn,
+.blue-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:bold;
+}
+
+.green-btn{
+
+    background:#00c853;
+}
+
+.blue-btn{
+
+    background:#1565c0;
+}
+body.report-page{
+    min-height:100vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("../images/smart_ai_bg.png.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+.graph-section{
+
+    margin-top:40px;
+
+    text-align:center;
+}
+
+.graph-section h2{
+
+    color:white;
+
+    margin-bottom:25px;
+
+    font-size:30px;
+}
+
+.graph-image{
+
+    width:90%;
+
+    max-width:700px;
+
+    border-radius:20px;
+
+    background:white;
+
+    padding:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
